@@ -17,7 +17,7 @@ export const Header = () => {
                   </h1>
                   <img width={40} src={logo_burger} alt="" />
                </div>
-               <ul
+               <ul onClick={() => setActive(true)}
                   className={active ? "nav-menu" : "nav-menu nav-menu--active "}
                >
                   <li onClick={() => setHeaderColor(true)}>
@@ -36,7 +36,7 @@ export const Header = () => {
 
                <button
                   onClick={() => setActive((prev) => !prev)}
-                  className="burger"
+                  className={headerColor ? "burger" : "burger header-black"}
                >
                   <span></span>
                   <span></span>

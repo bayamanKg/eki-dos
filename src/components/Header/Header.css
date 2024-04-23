@@ -13,10 +13,14 @@
 .header-black .nav-menu li a {
     color: #000;
 }
+.header-black .burger span {
+    background-color: #000;
+}
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
 }
 
 .logo {
@@ -101,11 +105,13 @@
         flex-direction: column;
         text-align: center;
         padding-top: 50px;
+        
     }
     .nav-menu li a {
         font-size: 20px;
     }
     .nav-menu--active {
         left: 0;
+       
     }
 }

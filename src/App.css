@@ -6,6 +6,11 @@
    font-family: "Montserrat", sans-serif;
 }
 
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
 
 .container {
   max-width: 1200px;

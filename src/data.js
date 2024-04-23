@@ -1,6 +1,8 @@
 import shawarma from "../public/shawarma.jpg";
 import burger from "../public/burger.jpg"
 import pepsi from "../public/pepsi.jpg"
+import fanta from "../public/fanta.jpg"
+import sprite from "../public/sprite.jpg"
 
 export const foods = [
    {
@@ -10,29 +12,24 @@ export const foods = [
       img: shawarma,
    },
    {
-      name: "Шаурма",
-      price: "200сом",
+      name: "Мини Шаурма",
+      price: "180сом",
       category: "shawarma",
       img: shawarma,
    },
    {
-      name: "Шаурма",
-      price: "200сом",
+      name: "Шаурма с сыром",
+      price: "220сом",
       category: "shawarma",
       img: shawarma,
    },
    {
-      name: "Шаурма",
+      name: "Шаурма для гурманов",
       price: "200сом",
       category: "shawarma",
       img: shawarma,
    },
-   {
-      name: "Шаурма",
-      price: "200сом",
-      category: "shawarma",
-      img: shawarma,
-   },
+  
    {
       name: "Бургер",
       price: "170сом",
@@ -40,13 +37,13 @@ export const foods = [
       img: burger
    },
    {
-      name: "Бургер",
+      name: "Хан Бургер",
       price: "170сом",
       category: "burgers",
       img: burger
    },
    {
-      name: "Бургер",
+      name: "Чизбургер",
       price: "170сом",
       category: "burgers",
       img: burger
@@ -58,14 +55,14 @@ export const foods = [
       img: pepsi
    },
    {
-      name: "Пепси 1л",
+      name: "Фанта 1л",
       price: "90сом",
       category: "drinks",
-      img: pepsi
+      img: fanta
    }, {
-      name: "Пепси 1л",
+      name: "Спрайт 1л",
       price: "90сом",
       category: "drinks",
-      img: pepsi
+      img: sprite
    },
 ];
