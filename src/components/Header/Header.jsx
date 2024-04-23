@@ -1,0 +1,49 @@
+import React, { useState } from "react";
+import "./Header.css";
+import { NavLink } from "react-router-dom";
+import logo_burger from "../../../public/logo.png";
+
+export const Header = () => {
+   const [active, setActive] = useState(true);
+   const [headerColor, setHeaderColor] = useState(true);
+
+   return (
+      <header className={headerColor ? "header" : "header header-black"}>
+         <div className="container">
+            <nav className={active ? "nav" : "nav burger--active"}>
+               <div className="logo">
+                  <h1>
+                     Эки <span>дос</span>
+                  </h1>
+                  <img width={40} src={logo_burger} alt="" />
+               </div>
+               <ul
+                  className={active ? "nav-menu" : "nav-menu nav-menu--active "}
+               >
+                  <li onClick={() => setHeaderColor(true)}>
+                     <NavLink to="/">Домой</NavLink>
+                  </li>
+                  <li onClick={() => setHeaderColor(false)}>
+                     <NavLink to="/about">О нас</NavLink>
+                  </li>
+                  <li onClick={() => setHeaderColor(false)}>
+                     <NavLink to="/contact">Контакты</NavLink>
+                  </li>
+                  <li onClick={() => setHeaderColor(false)}>
+                     <NavLink to="/app">Мобильное приложение</NavLink>
+                  </li>
+               </ul>
+
+               <button
+                  onClick={() => setActive((prev) => !prev)}
+                  className="burger"
+               >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </button>
+            </nav>
+         </div>
+      </header>
+   );
+};
